@@ -20,3 +20,8 @@ pytest projects/11-url-shortener -q
 - `secrets` for codes, unique index for idempotent re-shortening
 - 302 (not 301) so analytics are not defeated by the browser cache
 - Visit rows keep referrer and user-agent for attribution
+
+## Repository
+- GitHub: https://github.com/{owner}/url-shortener
+- Python 3.11+ · tests: `pytest` · runtime dependencies: fastapi, uvicorn, httpx
+- Start the service: `uvicorn shortener.api:create_app --factory --reload`
